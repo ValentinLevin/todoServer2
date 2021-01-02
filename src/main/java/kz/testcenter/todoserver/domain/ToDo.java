@@ -20,7 +20,7 @@ public class ToDo {
     @NotNull
     @NotBlank
     private String description;
-    private Boolean completed;
+    private boolean completed;
 
     @Setter(AccessLevel.PRIVATE)
     private LocalDateTime created;
@@ -32,5 +32,6 @@ public class ToDo {
         this.id = UUID.randomUUID().toString();
         this.created = date;
         this.modified = date;
+        this.completed = false;
     }
 }
